@@ -20,7 +20,7 @@ public class Client extends Application {
     }
     @Override
     public void start(Stage stage) throws Exception {
-        requestServerAddress();
+        //requestServerAddress();
 
         stage.getIcons().add(new Image(getClass().getResource("/images/client/client_app_logo.png").toExternalForm()));
         ClientModel model = new ClientModel();
