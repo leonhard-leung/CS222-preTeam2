@@ -128,10 +128,14 @@ public class ServerController implements MainMenuAdminObserver {
             case "PROCESS_ORDER" -> {
                 try {
                     Order order = model.processOrder((Order) message[2]);
-                    sendData(String.valueOf(message[0]), "PROCESS_ORDER_SUCCESSFUL", order);
-                    model.notifyObservers();
+                    if (order != null) {
+                        sendData(String.valueOf(message[0]), "PROCESS_ORDER_SUCCESSFUL", order);
+                        model.notifyObservers();
+                    } else {
+                        sendData(String.valueOf(message[0]), "PROCESS_ORDER_FAILED", null);
+                    }
                 } catch (Exception exception) {
-                    sendData(String.valueOf(message[0]), "PROCESS_ORDER_FAILED", null);
+
                     exception.printStackTrace();
                     System.err.println("Error during the order processing");
                 }
@@ -173,12 +177,14 @@ public class ServerController implements MainMenuAdminObserver {
         }
     } // end of notifyMenuChanges
 
-    public void sendData(String clientID, String code, Object data) {
+    public synchronized void sendData(String clientID, String code, Object data) {
         Object[] response = {clientID, code, data};
         try {
-            streamWriter.writeObject(response);
-            streamWriter.flush();
-            streamWriter.reset();
+            if (!clientSocket.isClosed()) {
+                streamWriter.writeObject(response);
+                streamWriter.flush();
+                streamWriter.reset();
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

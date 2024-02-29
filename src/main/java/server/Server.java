@@ -51,7 +51,7 @@ public class Server extends Application implements ClientObserver {
         startServer();
 
         // broadcast the server to all machines connected in the local network
-        startBroadcastingServer();
+        //startBroadcastingServer();
     } // end of start
 
     private void startServer() {

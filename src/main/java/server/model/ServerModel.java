@@ -69,7 +69,10 @@ public class ServerModel {
      * 5. Return the successfulOrder
      * 2. */
     public Order processOrder(Order order) throws Exception {
-        checkAvailability(order); //order that is not successful
+        if (!checkAvailability(order)) {
+            return null;
+        }
+        //checkAvailability(order); //order that is not successful
         updateMenu(order);
 
         Order successfulOrder = new Order(order); //if it reaches here, means the order is successful
@@ -118,14 +121,16 @@ public class ServerModel {
     /**This method checks the availability of products in the menu based on the customer's order.
      * @param order, client of the order
      * @throws Exception if the product menu is out of stock. */
-    private synchronized void checkAvailability(Order order) throws Exception{
+    private synchronized boolean checkAvailability(Order order) throws Exception{
         for (Product product: order.getOrders()) {
             if (product instanceof Food food){ //check first what type of product
                 //cast it
 
                 if (food.getQuantity() > foodMenu.get(food.getName()).getQuantity()){
+                    System.out.println("out of stock");
+                    return false;
                     //checks if the order food quantity is greater than what is on the menu
-                    throw new OutOfStockException("Out of stock");
+                    //throw new OutOfStockException("Out of stock");
                 }
             }else if (product instanceof Beverage beverage){
 
@@ -137,11 +142,14 @@ public class ServerModel {
                     int variationQuantity = beverage.getVariationQuantity(variation); //small = 10;
                     int variationAvailableOnMenu = beverageMenu.get(beverage.getName()).getVariationQuantity(variation);
                     if (variationQuantity > variationAvailableOnMenu){
-                        throw new OutOfStockException("Out of stock");
+                        System.out.println("out of stock");
+                        return false;
+                        //throw new OutOfStockException("Out of stock");
                     }
                 }
             }
         }
+        return true;
     }
 
     /**This method handles all the signup processes from the client.
