@@ -34,16 +34,12 @@ public class LoginPageModel {
             sendData(clientID, requestType, credentials);
             Object[] response = (Object[]) in.readObject();
 
-            /*
             //Close the connection when it is not login successful
             if (!response[1].equals("LOGIN_SUCCESSFUL")){ //todo: if login is successful, set the socket for the main menu client page
                 socket.close();
                 in.close();
                 out.close();
             }
-
-             */
-
             serverResponse = response;
     }
 
