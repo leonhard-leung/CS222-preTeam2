@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.fxmlview.CheckoutItemCardView">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="360.0" style="-fx-background-color: #ffffff; -fx-border-color: #b59c7a; -fx-border-width: 3;">
+         <children>
+            <ImageView fx:id="itemImage" fitHeight="72.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../productimages/Pistachio%20Cupcake.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <VBox prefHeight="72.0" prefWidth="203.0">
+               <children>
+                  <Label fx:id="itemName" alignment="TOP_LEFT" prefHeight="123.0" prefWidth="179.0" text="Product Name" wrapText="true">
+                     <font>
+                        <Font name="Garamond Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="91.0">
+                     <children>
+                        <Label fx:id="itemQuantity" prefHeight="17.0" prefWidth="96.0" text="qty:">
+                           <font>
+                              <Font name="Garamond" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemSizeLabel" prefHeight="24.0" prefWidth="96.0" text="size: " visible="false">
+                           <font>
+                              <Font name="Garamond" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <Label fx:id="itemPriceLabel" prefHeight="22.0" prefWidth="118.0" text="P 180.00">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

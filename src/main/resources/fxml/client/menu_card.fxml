@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="365.0" style="-fx-border-width: 3 3 3 3; -fx-border-color: #a38157;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.fxmlview.MenuCardView">
+   <children>
+      <VBox prefHeight="124.0" prefWidth="441.0">
+         <children>
+            <Label fx:id="productName" prefHeight="19.0" prefWidth="279.0" text="Product Name" wrapText="true">
+               <font>
+                  <Font name="Garamond Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets right="2.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin></Label>
+            <Label fx:id="productDescription" alignment="TOP_LEFT" prefHeight="51.0" prefWidth="233.0" text="Product Description" wrapText="true">
+               <font>
+                  <Font name="Garamond" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets right="5.0" top="1.0" />
+               </VBox.margin></Label>
+            <Label fx:id="productRating" text="Rating: 4.6" textFill="#2cb14d">
+               <font>
+                  <Font name="Garamond Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="productPrice" text="₱180.00">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font></Label>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" top="10.0" />
+         </padding></VBox>
+      <VBox alignment="CENTER" prefHeight="130.0" prefWidth="89.0">
+         <children>
+            <Pane prefHeight="8.0" prefWidth="90.0" />
+            <ImageView fx:id="productImage" fitHeight="100.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../productimages/Pistachio%20Cupcake.png" />
+                </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="sizeLabel" prefHeight="22.0" prefWidth="65.0" text="size: S,M,L">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="13.0" />
+               </font>
+            </Label>
+         </children></VBox>
+      <Button fx:id="addProductButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #e4d8c6; -fx-border-color: #66382a; -fx-border-radius: 5 5 5 5; -fx-background-radius: 5 5 5 5;" text="+" textFill="#634921">
+         <HBox.margin>
+            <Insets bottom="8.0" left="2.0" right="8.0" />
+         </HBox.margin>
+         <font>
+            <Font name="Impact" size="16.0" />
+         </font></Button>
+   </children>
+</HBox>

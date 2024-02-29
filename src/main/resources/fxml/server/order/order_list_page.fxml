@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.6" prefWidth="1000.0" style="-fx-background-color: #ECE9E3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.view.orders.OrderListPageView">
+    <top>
+        <Pane prefHeight="61.0" prefWidth="1000.0" style="-fx-background-color: #ECE9E3;" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="searchOrderTextField" layoutX="736.0" layoutY="18.0" prefHeight="25.0" prefWidth="250.0" promptText="Search by Order Number">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></TextField>
+            <Text fill="#634921" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIST OF ORDERS">
+               <font>
+                  <Font name="Copperplate Gothic Light" size="22.0" />
+               </font>
+            </Text>
+            </children>
+        </Pane>
+    </top>
+    <center>
+          <TableView fx:id="orderTableView" prefHeight="677.0" prefWidth="1000.0" style="-fx-font-size: 13;" stylesheets="@../../../values/table_style.css">
+              <columns>
+                  <TableColumn fx:id="orderIDColumn" editable="false" prefWidth="90.0" resizable="false" text="Order ID" />
+                  <TableColumn fx:id="dateAndTimeColumn" editable="false" prefWidth="135.0" resizable="false" text="Date and Time" />
+                  <TableColumn fx:id="customerColumn" editable="false" prefWidth="120.0" resizable="false" text="Customer " />
+                  <TableColumn fx:id="addressColumn" editable="false" prefWidth="190.0" resizable="false" text="Address" />
+                  <TableColumn fx:id="totalColumn" editable="false" prefWidth="95.0" resizable="false" text="Total" />
+                  <TableColumn fx:id="statusColumn" editable="false" prefWidth="131.0" resizable="false" text="Status" />
+            <TableColumn fx:id="viewOrderColumn" editable="false" prefWidth="102.0" resizable="false" text="View Order" />
+            <TableColumn fx:id="setStatusColumn" editable="false" prefWidth="102.0" resizable="false" text="Set Status" />
+              </columns>
+         <BorderPane.margin>
+            <Insets bottom="8.0" left="10.0" right="10.0" />
+         </BorderPane.margin>
+          </TableView>
+    </center>
+</BorderPane>

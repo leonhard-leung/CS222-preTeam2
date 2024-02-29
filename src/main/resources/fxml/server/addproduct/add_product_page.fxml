@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.6" prefWidth="1000.0" style="-fx-background-color: #ECE9E3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.view.addproducts.AddProductPageView">
+    <children>
+        <Label layoutX="52.0" layoutY="15.0" text="ADD A PRODUCT" textFill="#634921">
+            <font>
+                <Font name="Copperplate Gothic Light" size="32.0" />
+            </font></Label>
+        <AnchorPane layoutX="31.0" layoutY="72.0" prefHeight="611.0" prefWidth="935.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10 10 10 10;">
+            <children>
+                <VBox layoutX="-4.0" layoutY="-2.0" prefHeight="614.0" prefWidth="943.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="420.0" prefWidth="939.0">
+                            <children>
+                                <VBox prefHeight="420.0" prefWidth="314.0" spacing="15.0">
+                                    <children>
+                                        <Label prefHeight="23.0" prefWidth="195.0" text="PRODUCT NAME:" textFill="#634921">
+                                            <font>
+                                                <Font name="Garamond Bold" size="22.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="productNameTextField" minHeight="-Infinity" prefHeight="43.0" prefWidth="274.0" promptText="Enter Product Name">
+                                            <font>
+                                                <Font name="Arial" size="18.0" />
+                                            </font>
+                                        </TextField>
+                                        <Label text="PRODUCT TYPE" textFill="#634921">
+                                            <font>
+                                                <Font name="Garamond Bold" size="22.0" />
+                                            </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                                        </Label>
+                                        <MenuButton fx:id="typeOfProductMenuButton" alignment="CENTER" minHeight="-Infinity" mnemonicParsing="false" prefHeight="43.0" prefWidth="318.0" style="-fx-background-color: #634921;" text="Choose Product Type" textFill="WHITE">
+                                            <items>
+                                                <MenuItem fx:id="foodMenuItem" mnemonicParsing="false" onAction="#chooseFoodMenuItem" text="Food " />
+                                                <MenuItem fx:id="beverageMenuItem" mnemonicParsing="false" onAction="#chooseBeverageMenuItem" text="Beverage" />
+                                            </items>
+                                            <font>
+                                                <Font name="Garamond" size="20.0" />
+                                            </font>
+                                        </MenuButton>
+                                        <Label text="PRODUCT DESCRIPTION" textFill="#634921">
+                                            <font>
+                                                <Font name="Garamond Bold" size="22.0" />
+                                            </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                                        </Label>
+                              <TextArea fx:id="productDescriptionTextArea" prefHeight="200.0" prefWidth="200.0" promptText="Enter short description only" wrapText="true">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </TextArea>
+                                    </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                                </VBox>
+                                <VBox prefHeight="420.0" prefWidth="314.0" spacing="15.0">
+                                    <children>
+                                        <Label fx:id="mainPriceLabel" text="Price for" textFill="#634921">
+                                            <font>
+                                                <Font name="Garamond Bold" size="22.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="mainPriceTextField" editable="false" prefHeight="43.0" prefWidth="95.0" promptText="eg. 1500">
+                                            <font>
+                                                <Font name="Arial" size="18.0" />
+                                            </font>
+                                        </TextField>
+                                        <Label fx:id="mediumPriceLabel" text="Price for" textFill="#634921">
+                                            <font>
+                                                <Font name="Garamond Bold" size="22.0" />
+                                            </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                                        </Label>
+                                        <TextField fx:id="mediumPriceTextField" editable="false" prefHeight="43.0" prefWidth="95.0" promptText="eg. 1500">
+                                            <font>
+                                                <Font name="Arial" size="18.0" />
+                                            </font>
+                                        </TextField>
+                                        <Label fx:id="largePriceLabel" text="Price for" textFill="#634921">
+                                            <font>
+                                                <Font name="Garamond Bold" size="22.0" />
+                                            </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                                        </Label>
+                                        <TextField fx:id="largePriceTextField" editable="false" prefHeight="43.0" prefWidth="95.0" promptText="eg. 1500">
+                                            <font>
+                                                <Font name="Arial" size="18.0" />
+                                            </font>
+                                        </TextField>
+                                    </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                                </VBox>
+                                <VBox prefHeight="236.0" prefWidth="314.0" spacing="15.0">
+                                    <children>
+                                        <Label fx:id="mainQuantityLabel" text="Quantity for " textFill="#634921">
+                                            <font>
+                                                <Font name="Garamond Bold" size="22.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="mainQuantityTextField" editable="false" prefHeight="43.0" prefWidth="95.0" promptText="eg. 10">
+                                            <font>
+                                                <Font name="Arial" size="18.0" />
+                                            </font>
+                                        </TextField>
+                                        <Label fx:id="mediumQuantityLabel" text="Quantity for " textFill="#634921">
+                                            <font>
+                                                <Font name="Garamond Bold" size="22.0" />
+                                            </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                                        </Label>
+                                        <TextField fx:id="mediumQuantityTextField" editable="false" prefHeight="43.0" prefWidth="95.0" promptText="eg. 10">
+                                            <font>
+                                                <Font name="Arial" size="18.0" />
+                                            </font>
+                                        </TextField>
+                                        <Label fx:id="largeQuantityLabel" text="Quantity for " textFill="#634921">
+                                            <font>
+                                                <Font name="Garamond Bold" size="22.0" />
+                                            </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                                        </Label>
+                                        <TextField fx:id="largeQuantityTextField" editable="false" prefHeight="43.0" prefWidth="95.0" promptText="eg. 10">
+                                            <font>
+                                                <Font name="Arial" size="18.0" />
+                                            </font>
+                                        </TextField>
+                                    </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <Pane prefHeight="38.0" prefWidth="939.0" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="939.0">
+                            <children>
+                                <Button fx:id="chooseImageButton" minHeight="-Infinity" mnemonicParsing="false" prefHeight="43.0" prefWidth="242.0" text="Choose image file">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Button>
+                                <TextField fx:id="imageTextField" editable="false" prefHeight="43.0" prefWidth="424.0">
+                           <HBox.margin>
+                              <Insets left="2.0" />
+                           </HBox.margin></TextField>
+                                <Button fx:id="addProductButton" mnemonicParsing="false" onMouseEntered="#addProductButtonEntered" onMouseExited="#addProductButtonExited" prefHeight="43.0" prefWidth="163.0" style="-fx-background-color: #634921;" text="Add Product" textFill="WHITE">
+                                    <font>
+                                        <Font name="Copperplate Gothic Light" size="18.0" />
+                                    </font>
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                                </Button>
+                            </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="25.0" prefWidth="939.0">
+                            <children>
+                                <Label fx:id="imageLabel" text="..." textFill="RED">
+                                    <font>
+                                        <Font name="Arial" size="18.0" />
+                                    </font>
+                           <padding>
+                              <Insets left="265.0" />
+                           </padding>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

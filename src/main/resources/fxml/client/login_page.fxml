@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.fxmlview.LoginPageView">
+   <right>
+      <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="494.0" style="-fx-background-color: #faf0e5;">
+         <children>
+            <VBox alignment="CENTER" layoutX="113.0" prefHeight="495.0" prefWidth="270.0">
+               <children>
+                  <Label text="Account Login" textFill="#66382a">
+                     <font>
+                        <Font name="Impact" size="30.0" />
+                     </font></Label>
+                  <VBox prefHeight="373.0" prefWidth="270.0">
+                     <children>
+                        <Label text="Username">
+                           <font>
+                              <Font name="Garamond" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="usernameTextField" prefHeight="38.0" promptText="Enter Username">
+                           <font>
+                              <Font name="Garamond" size="16.0" />
+                           </font>
+                        </TextField>
+                        <Label text="Password">
+                           <font>
+                              <Font name="Garamond" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="28.0" />
+                           </VBox.margin>
+                        </Label>
+                        <PasswordField fx:id="passwordField" prefHeight="38.0" promptText="Enter Password">
+                           <font>
+                              <Font name="Garamond" size="16.0" />
+                           </font>
+                        </PasswordField>
+                        <Button fx:id="loginButton" mnemonicParsing="false" onMouseEntered="#loginPageButtonEntered" onMouseExited="#loginPageButtonExited" prefHeight="35.0" prefWidth="269.0" style="-fx-background-color: #A38157;" text="LOG IN" textFill="WHITE">
+                           <font>
+                              <Font name="Copperplate Gothic Light" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="82.0" />
+                           </VBox.margin></Button>
+                        <Label fx:id="noticeLabel" textFill="RED">
+                           <VBox.margin>
+                              <Insets top="4.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Line endX="269.0" stroke="#c8bca9">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Line>
+                        <Label text="Forgot Password" underline="true">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children></VBox>
+            <Button fx:id="homeButton" layoutX="353.0" layoutY="234.0" mnemonicParsing="false" onMouseEntered="#homePageButtonEntered" onMouseExited="#homePageButtonExited" prefHeight="28.0" prefWidth="254.0" rotate="-90.0" style="-fx-background-color: #66382a;" text="Back To Home" textFill="WHITE">
+               <font>
+                  <Font name="Garamond" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </right>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="495.0" prefWidth="671.0" spacing="10.0" style="-fx-background-color: #634921;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/client/accountlogin/coffeeCup.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </ImageView>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Leonardo D' Cafe">
+               <font>
+                  <Font name="Monotype Corsiva" size="50.0" />
+               </font>
+            </Text>
+            <Text boundsType="VISUAL" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Leonardo D’ Cafe - Your Gateway to Gourmet Experiences!" textAlignment="CENTER" wrappingWidth="343.603515625">
+               <font>
+                  <Font name="Garamond Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text boundsType="VISUAL" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Indulge in a seamless coffee and culinary journey with us. By registering an account, you unlock a world of exclusive benefits and personalized experiences. Become a part of our community where every cup of coffee brewed and every dish crafted tells a story of passion and quality." textAlignment="CENTER" wrappingWidth="364.27734375">
+               <font>
+                  <Font name="Garamond" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin></Text>
+         </children></VBox>
+   </center>
+</BorderPane>

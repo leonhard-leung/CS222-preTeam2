@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.6" prefWidth="1000.0" style="-fx-background-color: #ECE9E3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.view.accounts.AccountListPageView">
+    <top>
+        <Pane prefHeight="61.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="searchAccountTextField" layoutX="736.0" layoutY="18.0" prefHeight="25.0" prefWidth="250.0" promptText="Search Account">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></TextField>
+            <Text fill="#634921" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACCOUNTS LIST">
+               <font>
+                  <Font name="Copperplate Gothic Light" size="22.0" />
+               </font>
+            </Text>
+            </children>
+        </Pane>
+    </top>
+   <center>
+          <TableView fx:id="accountsTableView" focusTraversable="false" minHeight="-Infinity" prefHeight="649.0" prefWidth="1000.0" style="-fx-font-size: 13;" stylesheets="@../../../values/table_style.css" BorderPane.alignment="CENTER">
+              <columns>
+                  <TableColumn fx:id="usernameColumn" editable="false" prefWidth="150.0" resizable="false" text="Username" />
+                  <TableColumn fx:id="nameColumn" editable="false" prefWidth="200.0" resizable="false" text="Name" />
+                  <TableColumn fx:id="addressColumn" editable="false" prefWidth="310.0" resizable="false" text="Address" />
+                  <TableColumn fx:id="emailColumn" editable="false" prefWidth="210.0" resizable="false" text="Email" />
+            <TableColumn fx:id="viewInformationColumn" prefWidth="95.0" resizable="false" text="View Info" />
+              </columns>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </BorderPane.margin>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+          </TableView>
+   </center>
+</BorderPane>

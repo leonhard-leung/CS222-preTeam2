@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.fxmlview.LandingPageView">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="885.0" spacing="10.0" style="-fx-background-color: #634921;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/client/accountlogin/coffeeCup.png" />
+               </image>
+            </ImageView>
+            <Label text="Leonardo D' Cafe" textFill="WHITE">
+               <font>
+                  <Font name="Monotype Corsiva" size="26.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER_LEFT" prefHeight="105.0" prefWidth="870.0" spacing="40.0" style="-fx-background-color: #faf0e5; -fx-border-width: 1 1 1 1; -fx-border-color: #A38157;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="101.0" prefWidth="118.0">
+               <children>
+                  <Label alignment="CENTER" text="Featured Items" textAlignment="CENTER" textFill="#66382a">
+                     <font>
+                        <Font name="Impact" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/client/landingpage/bread.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Bread" textFill="#66382a">
+                     <font>
+                        <Font name="Garamond" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/client/landingpage/cookies.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Cookies" textFill="#66382a">
+                     <font>
+                        <Font name="Garamond" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/client/landingpage/drinks.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Coffee" textFill="#66382a">
+                     <font>
+                        <Font name="Garamond" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/client/landingpage/cupcake.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Cupcakes" textFill="#66382a">
+                     <font>
+                        <Font name="Garamond" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/client/landingpage/cake.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Cakes" textFill="#66382a">
+                     <font>
+                        <Font name="Garamond" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="265.0" fitWidth="890.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/client/landingpage/mainPage.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" prefHeight="178.0" prefWidth="890.0" spacing="60.0">
+               <children>
+                  <Button fx:id="loginButtonFrontPage" mnemonicParsing="false" onMouseEntered="#loginFrontPageButtonEntered" onMouseExited="#loginFrontPageButtonExited" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: #A38157;" text="LOG IN" textFill="WHITE">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="18.0" />
+                     </font></Button>
+                  <Button fx:id="signupButtonFrontPage" mnemonicParsing="false" onMouseEntered="#signupFrontPageButtonEntered" onMouseExited="#signupFrontPageButtonExited" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: #A38157;" text="SIGN UP" textFill="WHITE">
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="18.0" />
+                     </font></Button>
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

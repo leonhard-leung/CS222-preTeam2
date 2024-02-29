@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="717.6" prefWidth="1000.0" style="-fx-background-color: #ECE9E3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.view.inventory.InventoryPageView">
+    <children>
+        <Text fill="#634921" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INVENTORY" AnchorPane.leftAnchor="14.0">
+            <font>
+                <Font name="Copperplate Gothic Light" size="22.0" />
+            </font>
+        </Text>
+        <TextField fx:id="searchInventoryTextField" layoutX="736.0" layoutY="18.0" prefHeight="25.0" prefWidth="250.0" promptText="Search by product" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></TextField>
+          <TableView fx:id="inventoryTableView" focusTraversable="false" layoutY="61.0" prefHeight="610.0" prefWidth="1000.0" style="-fx-font-size: 13;" stylesheets="@../../../values/table_style.css" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+              <columns>
+                  <TableColumn fx:id="productNameColumn" editable="false" prefWidth="400.0" resizable="false" text="Product Name" />
+                  <TableColumn fx:id="typeColumn" editable="false" prefWidth="153.0" resizable="false" text="Type" />
+                  <TableColumn fx:id="quantityColumn" editable="false" prefWidth="106.0" resizable="false" text="Quantity" />
+            <TableColumn fx:id="editQuantityColumn" editable="false" minWidth="95.0" prefWidth="102.0" resizable="false" text="Edit Quantity" />
+            <TableColumn fx:id="editDetailsColumn" editable="false" minWidth="95.0" prefWidth="102.0" resizable="false" text="Edit Details" />
+            <TableColumn fx:id="deleteProductColumn" editable="false" minWidth="95.0" prefWidth="102.0" resizable="false" text="Delete Product" />
+              </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+          </TableView>
+      <Button fx:id="saveChangesButton" layoutX="405.0" layoutY="680.0" mnemonicParsing="false" onMouseEntered="#saveChangesButtonEntered" onMouseExited="#saveChangesButtonExited" prefHeight="24.0" prefWidth="191.0" style="-fx-background-color: #A38157;" text="Save Changes" textFill="WHITE">
+         <font>
+            <Font name="Copperplate Gothic Light" size="16.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,230 @@
+<beveragemenu>
+    <beverage name="Midnight Mocha Iced Coffee">
+        <name>Midnight Mocha Iced Coffee</name>
+        <type>b</type>
+        <review>4.2</review>
+        <reviewCount>20</reviewCount>
+        <image>Black Iced Coffee.png</image>
+        <description>A refreshing blend of rich coffee with a hint of chocolate, perfect for any time of the day.</description>
+        <amountSold>75</amountSold>
+        <quantities>
+            <quantity size="small">15</quantity>
+            <quantity size="medium">10</quantity>
+            <quantity size="large">5</quantity>
+        </quantities>
+        <prices>
+            <price size="small">4</price>
+            <price size="medium">5</price>
+            <price size="large">6</price>
+        </prices>
+    </beverage>
+    <beverage name="Brown Sugar Bliss Iced Coffee">
+        <name>Brown Sugar Bliss Iced Coffee</name>
+        <type>b</type>
+        <review>4.5</review>
+        <reviewCount>22</reviewCount>
+        <image>Brown Sugar Iced Coffee.png</image>
+        <description>Indulge in the sweetness of brown sugar infused into a chilled coffee concoction.</description>
+        <amountSold>90</amountSold>
+        <quantities>
+            <quantity size="small">17</quantity>
+            <quantity size="medium">12</quantity>
+            <quantity size="large">8</quantity>
+        </quantities>
+        <prices>
+            <price size="small">5</price>
+            <price size="medium">6</price>
+            <price size="large">7</price>
+        </prices>
+    </beverage>
+    <beverage name="Caramel Creamy Frappe">
+        <name>Caramel Creamy Frappe</name>
+        <type>b</type>
+        <review>4.7</review>
+        <reviewCount>26</reviewCount>
+        <image>Caramel Frappe.png</image>
+        <description>Experience pure bliss with this creamy caramel frappe, a delightful treat on a hot day.</description>
+        <amountSold>120</amountSold>
+        <quantities>
+            <quantity size="small">20</quantity>
+            <quantity size="medium">15</quantity>
+            <quantity size="large">10</quantity>
+        </quantities>
+        <prices>
+            <price size="small">6</price>
+            <price size="medium">7</price>
+            <price size="large">8</price>
+        </prices>
+    </beverage>
+    <beverage name="Choco Chip Delight Frappe">
+        <name>Choco Chip Delight Frappe</name>
+        <type>b</type>
+        <review>4.4</review>
+        <reviewCount>19</reviewCount>
+        <image>Chocolate Chip Frappe.png</image>
+        <description>Indulge your senses with this delightful blend of chocolate and coffee, topped with chocolate chips.</description>
+        <amountSold>80</amountSold>
+        <quantities>
+            <quantity size="small">14</quantity>
+            <quantity size="medium">10</quantity>
+            <quantity size="large">6</quantity>
+        </quantities>
+        <prices>
+            <price size="small">5</price>
+            <price size="medium">6</price>
+            <price size="large">7</price>
+        </prices>
+    </beverage>
+    <beverage name="Chilled Brewed Latte">
+        <name>Chilled Brewed Latte</name>
+        <type>b</type>
+        <review>4.6</review>
+        <reviewCount>23</reviewCount>
+        <image>Cold Brew Iced Latte.png</image>
+        <description>A smooth and creamy latte served over ice, a perfect pick-me-up for any occasion.</description>
+        <amountSold>110</amountSold>
+        <quantities>
+            <quantity size="small">17</quantity>
+            <quantity size="medium">12</quantity>
+            <quantity size="large">8</quantity>
+        </quantities>
+        <prices>
+            <price size="small">4</price>
+            <price size="medium">5</price>
+            <price size="large">6</price>
+        </prices>
+    </beverage>
+    <beverage name="Oreo Cheesecake Milk Tea">
+        <name>Oreo Cheesecake Milk Tea</name>
+        <type>b</type>
+        <review>4.8</review>
+        <reviewCount>28</reviewCount>
+        <image>Cream Cheese Oreo Milktea.png</image>
+        <description>Indulge in the creamy goodness of cream cheese blended with Oreo cookies in this heavenly milk tea.</description>
+        <amountSold>150</amountSold>
+        <quantities>
+            <quantity size="small">20</quantity>
+            <quantity size="medium">15</quantity>
+            <quantity size="large">10</quantity>
+        </quantities>
+        <prices>
+            <price size="small">6</price>
+            <price size="medium">7</price>
+            <price size="large">8</price>
+        </prices>
+    </beverage>
+    <beverage name="Matcha Frosted Iced Latte">
+        <name>Matcha Frosted Iced Latte</name>
+        <type>b</type>
+        <review>4.3</review>
+        <reviewCount>21</reviewCount>
+        <image>Iced Matcha Latte.png</image>
+        <description>A refreshing combination of matcha and frosted milk, served over ice for a delightful treat.</description>
+        <amountSold>100</amountSold>
+        <quantities>
+            <quantity size="small">16</quantity>
+            <quantity size="medium">11</quantity>
+            <quantity size="large">7</quantity>
+        </quantities>
+        <prices>
+            <price size="small">5</price>
+            <price size="medium">6</price>
+            <price size="large">7</price>
+        </prices>
+    </beverage>
+    <beverage name="Iced Sweet Tea">
+        <name>Iced Sweet Tea</name>
+        <type>b</type>
+        <review>4.0</review>
+        <reviewCount>15</reviewCount>
+        <image>Iced Tea.png</image>
+        <description>Cool off with this refreshing iced tea, perfectly sweetened to quench your thirst.</description>
+        <amountSold>80</amountSold>
+        <quantities>
+            <quantity size="small">13</quantity>
+            <quantity size="medium">9</quantity>
+            <quantity size="large">5</quantity>
+        </quantities>
+        <prices>
+            <price size="small">3</price>
+            <price size="medium">4</price>
+            <price size="large">5</price>
+        </prices>
+    </beverage>
+    <beverage name="Mocha Madness Frappe">
+        <name>Mocha Madness Frappe</name>
+        <type>b</type>
+        <review>4.9</review>
+        <reviewCount>30</reviewCount>
+        <image>Mocha Frappe.png</image>
+        <description>Experience the ultimate mocha indulgence with this rich and creamy frappe.</description>
+        <amountSold>140</amountSold>
+        <quantities>
+            <quantity size="small">19</quantity>
+            <quantity size="medium">13</quantity>
+            <quantity size="large">8</quantity>
+        </quantities>
+        <prices>
+            <price size="small">6</price>
+            <price size="medium">7</price>
+            <price size="large">8</price>
+        </prices>
+    </beverage>
+    <beverage name="Okinawa Delight Milk Tea">
+        <name>Okinawa Delight Milk Tea</name>
+        <type>b</type>
+        <review>4.1</review>
+        <reviewCount>17</reviewCount>
+        <image>Okinawa Milktea.png</image>
+        <description>Transport yourself to Okinawa with this delightful milk tea, boasting rich and aromatic flavors.</description>
+        <amountSold>70</amountSold>
+        <quantities>
+            <quantity size="small">13</quantity>
+            <quantity size="medium">9</quantity>
+            <quantity size="large">5</quantity>
+        </quantities>
+        <prices>
+            <price size="small">4</price>
+            <price size="medium">5</price>
+            <price size="large">6</price>
+        </prices>
+    </beverage>
+    <beverage name="Vanilla Berry Burst Milk Tea">
+        <name>Vanilla Berry Burst Milk Tea</name>
+        <type>b</type>
+        <review>4.6</review>
+        <reviewCount>23</reviewCount>
+        <image>Vanilla Milktea.png</image>
+        <description>Indulge in the sweetness of vanilla milk tea topped with fresh blueberries and strawberries.</description>
+        <amountSold>110</amountSold>
+        <quantities>
+            <quantity size="small">17</quantity>
+            <quantity size="medium">12</quantity>
+            <quantity size="large">8</quantity>
+        </quantities>
+        <prices>
+            <price size="small">5</price>
+            <price size="medium">6</price>
+            <price size="large">7</price>
+        </prices>
+    </beverage>
+    <beverage name="Wintermelon Wonderland Milk Tea">
+        <name>Wintermelon Wonderland Milk Tea</name>
+        <type>b</type>
+        <review>4.4</review>
+        <reviewCount>19</reviewCount>
+        <image>Wintermelon Milktea.png</image>
+        <description>Escape to a wonderland of flavor with this refreshing wintermelon milk tea.</description>
+        <amountSold>80</amountSold>
+        <quantities>
+            <quantity size="small">14</quantity>
+            <quantity size="medium">10</quantity>
+            <quantity size="large">6</quantity>
+        </quantities>
+        <prices>
+            <price size="small">4</price>
+            <price size="medium">5</price>
+            <price size="large">6</price>
+        </prices>
+    </beverage>
+</beveragemenu>

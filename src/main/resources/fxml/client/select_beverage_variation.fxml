@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="550.0" style="-fx-background-color: #ECE9E3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.fxmlview.SelectBeverageVariationView">
+   <top>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="550.0" style="-fx-background-color: #634921;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Add To Cart" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <Button fx:id="addToCartButton" mnemonicParsing="false" onMouseEntered="#addToCartButtonEntered" onMouseExited="#addToCartButtonExited" prefHeight="32.0" prefWidth="445.0" style="-fx-background-color: #A38157;" text="ADD TO CART" textFill="WHITE" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="15.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Copperplate Gothic Light" size="17.0" />
+         </font>
+      </Button>
+   </bottom>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="369.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="167.0" prefWidth="510.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #66382a; -fx-border-radius: 5; -fx-background-radius: 5;">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <children>
+                  <VBox prefHeight="165.0" prefWidth="343.0">
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                     <children>
+                        <Label fx:id="productNameLabel" text="Product" textFill="#634921">
+                           <font>
+                              <Font name="Garamond Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="productDescriptionLabel" alignment="TOP_LEFT" prefHeight="78.0" prefWidth="400.0" text="Product Description" textFill="#634921" wrapText="true">
+                           <font>
+                              <Font name="Garamond" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="productAvailabilityLabel" text="Item Availability: 100" textFill="#634921">
+                           <font>
+                              <Font name="Impact" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="productPriceLabel" text="₱ 180.00 - ₱ 190.00" textFill="#634921">
+                           <font>
+                              <Font name="Impact" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="165.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <children>
+                        <ImageView fx:id="productImage" fitHeight="155.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/client/variation/cake.png" />
+                            </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children></HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="510.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #66382a; -fx-border-radius: 5 5 0 0; -fx-background-radius: 5 5 0 0;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="110.0">
+                     <children>
+                        <CheckBox fx:id="smallCheckBox" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="20.0" text="Small" textFill="#634921">
+                           <font>
+                              <Font name="Garamond" size="16.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding></HBox>
+                  <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="110.0">
+                     <children>
+                        <Label fx:id="smallStockLabel" text="Availability: 100" textFill="#634921">
+                           <font>
+                              <Font name="Garamond" size="16.0" />
+                           </font></Label>
+                     </children></HBox>
+                  <HBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="151.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="smallDecrementButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#smallDecrementButtonEntered" onMouseExited="#smallDecrementButtonExited" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #c7a97f;" text="-" textFill="WHITE">
+                           <font>
+                              <Font name="Rockwell Extra Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="smallQuantityLabel" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="49.0" text="1" textFill="#634921">
+                           <font>
+                              <Font name="Garamond Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="smallIncrementButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#smallIncrementButtonEntered" onMouseExited="#smallIncrementButtonExited" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #A38157;" text="+" textFill="WHITE">
+                           <font>
+                              <Font name="Rockwell Extra Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children></HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="smallTotalPriceLabel" text="₱ 180.00" textFill="#634921">
+                           <font>
+                              <Font name="Impact" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding></HBox>
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="510.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #66382a; -fx-border-width: 0 1 1 1;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="110.0">
+                     <children>
+                        <CheckBox fx:id="mediumCheckBox" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" prefHeight="20.0" text="Medium" textFill="#634921">
+                           <font>
+                              <Font name="Garamond" size="16.0" />
+                           </font></CheckBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="110.0">
+                     <children>
+                        <Label fx:id="mediumStockLabel" text="Availability: 90" textFill="#634921">
+                           <font>
+                              <Font name="Garamond" size="16.0" />
+                           </font></Label>
+                     </children></HBox>
+                  <HBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="151.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="mediumDecrementButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#mediumDecrementButtonEntered" onMouseExited="#mediumDecrementButtonExited" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #c7a97f;" text="-" textFill="WHITE">
+                           <font>
+                              <Font name="Rockwell Extra Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="mediumQuantityLabel" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="49.0" text="1" textFill="#634921">
+                           <font>
+                              <Font name="Garamond Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mediumIncrementButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#mediumIncrementButtonEntered" onMouseExited="#mediumIncrementButtonExited" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #A38157;" text="+" textFill="WHITE">
+                           <font>
+                              <Font name="Rockwell Extra Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children></HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="43.0" prefWidth="161.0">
+                     <children>
+                        <Label fx:id="mediumTotalPriceLabel" text="₱ 280.00" textFill="#634921">
+                           <font>
+                              <Font name="Impact" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding></HBox>
+               </children></HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="510.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #66382a; -fx-border-width: 0 1 1 1; -fx-border-radius: 0 0 5 5; -fx-background-radius: 0 0 5 5;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="110.0">
+                     <children>
+                        <CheckBox fx:id="largeCheckBox" minHeight="-Infinity" mnemonicParsing="false" prefHeight="20.0" text="Large" textFill="#634921">
+                           <font>
+                              <Font name="Garamond" size="16.0" />
+                           </font></CheckBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="110.0">
+                     <children>
+                        <Label fx:id="largeStockLabel" text="Availability: 80" textFill="#634921">
+                           <font>
+                              <Font name="Garamond" size="16.0" />
+                           </font></Label>
+                     </children></HBox>
+                  <HBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="151.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="largeDecrementButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#largeDecrementButtonEntered" onMouseExited="#largeDecrementButtonExited" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #c7a97f;" text="-" textFill="WHITE">
+                           <font>
+                              <Font name="Rockwell Extra Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="largeQuantityLabel" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="49.0" text="1" textFill="#634921">
+                           <font>
+                              <Font name="Garamond Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="largeIncrementButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseEntered="#largeIncrementButtonEntered" onMouseExited="#largeIncrementButtonExited" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #A38157;" text="+" textFill="WHITE">
+                           <font>
+                              <Font name="Rockwell Extra Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children></HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="largeTotalPriceLabel" text="₱ 380.00" textFill="#634921">
+                           <font>
+                              <Font name="Impact" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding></HBox>
+               </children></HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="510.0">
+               <children>
+                  <Label fx:id="noticeLabel" textFill="RED">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin></HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

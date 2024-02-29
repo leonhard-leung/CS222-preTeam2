@@ -1,0 +1,56 @@
+<orders>
+    <order>
+        <customer>
+            <name>John Doe</name>
+            <username>johndoe123</username>
+            <address>123 Main Street, Anytown, NY 12345, United States</address>
+        </customer>
+        <product>
+            <name>Espresso Roast</name>
+            <type>b</type>
+            <review>5</review>
+            <image>sample.png</image>
+            <size>small</size>
+            <quantity>2</quantity>
+        </product>
+        <product>
+            <name>French Roast</name>
+            <type>b</type>
+            <review>4</review>
+            <image>sample.png</image>
+            <size>medium</size>
+            <quantity>1</quantity>
+        </product>
+        <orderID>0</orderID>
+        <timeStamp>12/23/2023</timeStamp>
+        <totalPrice>145</totalPrice>
+        <status>false</status>
+    </order>
+    <order>
+        <customer>
+            <name>Ada Lovelace</name>
+            <username>adalovelace123</username>
+            <address>123 Main Street, Barangay San Antonio, Quezon City, Metro Manila, 1105</address>
+        </customer>
+        <product>
+            <name>Espresso Roast</name>
+            <type>b</type>
+            <review>5</review>
+            <image>sample.png</image>
+            <size>medium</size>
+            <quantity>4</quantity>
+        </product>
+        <product>
+            <name>French Roast</name>
+            <type>b</type>
+            <review>4</review>
+            <image>sample.png</image>
+            <size>small</size>
+            <quantity>2</quantity>
+        </product>
+        <orderID>1</orderID>
+        <timeStamp>12/24/2023</timeStamp>
+        <totalPrice>170</totalPrice>
+        <status>false</status>
+    </order>
+</orders>

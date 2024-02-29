@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="850.0" style="-fx-background-color: #ECE9E3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.fxmlview.CheckoutPageView">
+   <top>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="62.0" prefWidth="600.0" spacing="5.0" style="-fx-background-color: #634921;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../images/client/checkout/coffeeIcon.png" />
+                </image>
+            </ImageView>
+            <Label text="Leonardo D' Cafe" textFill="WHITE">
+               <font>
+                  <Font name="Monotype Corsiva" size="29.0" />
+               </font></Label>
+         </children>
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="425.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="425.0">
+                     <children>
+                        <Label text="Cart" textFill="#66382a">
+                           <font>
+                              <Font name="Garamond" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <ScrollPane fx:id="scrollPaneCartOnCheckOut" hbarPolicy="NEVER" prefHeight="460.0" prefWidth="380.0" style="-fx-border-color: #b59c7a;">
+                     <content>
+                        <GridPane fx:id="gridPaneCartOnCheckOut" prefHeight="31.0" prefWidth="0.0">
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+               <padding>
+                  <Insets bottom="45.0" left="25.0" right="20.0" top="15.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="425.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="380.0">
+                     <children>
+                        <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" text="Checkout" textFill="#66382a">
+                           <font>
+                              <Font name="Garamond" size="29.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="485.0" prefWidth="380.0" style="-fx-background-color: #EEEDF4; -fx-border-color: #b59c7a; -fx-border-radius: 5;">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="358.0" spacing="8.0">
+                           <children>
+                              <ImageView fitHeight="17.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../../images/client/checkout/gpsIcon.png" />
+                                  </image>
+                              </ImageView>
+                              <Label text="Delivery Information">
+                                 <font>
+                                    <Font name="Garamond Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="83.0" prefWidth="358.0">
+                           <children>
+                              <Label fx:id="clientName" text="Leonhard Leung">
+                                 <font>
+                                    <Font name="Monospaced Regular" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="clientAddress" alignment="TOP_LEFT" prefHeight="72.0" prefWidth="323.0" text="Ciudad Grande, Bakakeng Sur, Baguio City, Benguet" wrapText="true">
+                                 <font>
+                                    <Font name="Monospaced Regular" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="35.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="358.0" spacing="8.0">
+                           <children>
+                              <ImageView fitHeight="17.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/client/checkout/bagIcon.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Order Summary">
+                                 <font>
+                                    <Font name="Garamond Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children></HBox>
+                        <HBox prefHeight="53.0" prefWidth="358.0">
+                           <children>
+                              <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="257.0">
+                                 <children>
+                                    <Label text="Subtotal" textFill="#7e7e82">
+                                       <font>
+                                          <Font name="Monospaced Regular" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Delivery Fee" textFill="#7e7e82">
+                                       <font>
+                                          <Font name="Monospaced Regular" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Total Amount to be paid">
+                                       <font>
+                                          <Font name="Monospaced Regular" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="35.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="205.0">
+                                 <children>
+                                    <Label fx:id="subtotalPriceLabel" text="₱ 560.00" textFill="#7e7e82">
+                                       <font>
+                                          <Font name="Monospaced Regular" size="15.0" />
+                                       </font></Label>
+                                    <Label fx:id="deliveryFeeLabel" text="₱ 60.00" textFill="#7e7e82">
+                                       <font>
+                                          <Font name="Monospaced Regular" size="15.0" />
+                                       </font></Label>
+                                    <Label fx:id="totalAmountLabel" text="₱ 620.00">
+                                       <font>
+                                          <Font name="Monospaced Regular" size="15.0" />
+                                       </font></Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="358.0" spacing="8.0">
+                           <children>
+                              <ImageView fitHeight="17.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/client/checkout/walletIcon.png" />
+                                 </image>
+                              </ImageView>
+                              <Label text="Payment">
+                                 <font>
+                                    <Font name="Garamond Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="5.0" prefWidth="358.0" spacing="50.0">
+                           <children>
+                              <RadioButton fx:id="onlinePayment" mnemonicParsing="false" text="Online Payment">
+                                 <font>
+                                    <Font name="Garamond" size="15.0" />
+                                 </font>
+                              </RadioButton>
+                              <RadioButton fx:id="cashOnDelivery" mnemonicParsing="false" text="Cash on Delivery">
+                                 <font>
+                                    <Font name="Garamond" size="15.0" />
+                                 </font>
+                              </RadioButton>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="0.0" prefWidth="358.0">
+                           <children>
+                              <Label fx:id="noticeLabel" textFill="RED">
+                                 <font>
+                                    <Font name="Arial" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Button fx:id="placeOrderButton" mnemonicParsing="false" onMouseEntered="#placeOrderButtonEntered" onMouseExited="#placeOrderButtonExited" prefHeight="25.0" prefWidth="337.0" style="-fx-background-color: #A38157;" text="PLACE ORDER" textFill="WHITE">
+                           <font>
+                              <Font name="Copperplate Gothic Light" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="45.0" left="20.0" right="25.0" top="15.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

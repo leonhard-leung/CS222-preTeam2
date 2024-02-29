@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.view.accounts.AccountInformationPopupView">
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ECE9E3;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="336.0" prefWidth="200.0" spacing="3.0">
+               <children>
+                  <Label text="Name:" textFill="#634921">
+                     <font>
+                        <Font name="Garamond Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name" text="Insert Name" textFill="#634921" wrapText="true">
+                     <font>
+                        <Font name="Garamond" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Username:" textFill="#634921">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Garamond Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="username" text="Insert Username" textFill="#634921" wrapText="true">
+                     <font>
+                        <Font name="Garamond" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Address:" textFill="#634921">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Garamond Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="address" text="Insert Address" textFill="#634921" wrapText="true">
+                     <font>
+                        <Font name="Garamond" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Email:" textFill="#634921">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Garamond Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email" text="Insert Email" textFill="#634921" wrapText="true">
+                     <font>
+                        <Font name="Garamond" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Total Orders:" textFill="#634921">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Garamond Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="total" text="Insert Total" textFill="#634921" wrapText="true">
+                     <font>
+                        <Font name="Garamond" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children></Pane>
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ECE9E3;" BorderPane.alignment="CENTER">
+               <top>
+                  <Pane prefHeight="34.0" prefWidth="306.0" style="-fx-background-color: #ECE9E3;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="94.0" layoutY="5.0" text="Order History" textFill="#66382a">
+                           <font>
+                              <Font name="Impact" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </top>
+               <center>
+                  <TableView fx:id="orderTableView" focusTraversable="false" prefHeight="332.0" prefWidth="256.0" stylesheets="@../../../values/table_style.css" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn fx:id="ordersColumn" editable="false" prefWidth="183.0" resizable="false" text="Order" />
+                      <TableColumn fx:id="timestampColumn" editable="false" prefWidth="89.0" resizable="false" text="Timestamp" />
+                    </columns>
+                     <BorderPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </BorderPane.margin>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </center>
+               <bottom>
+                  <Button fx:id="closeTabButton" mnemonicParsing="false" onMouseEntered="#setCloseTabButtonMouseEntered" onMouseExited="#setCloseTabButtonMouseExited" style="-fx-background-color: #b59c7a;" text="Close Tab" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="10.0" top="8.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font name="Copperplate Gothic Light" size="13.0" />
+                     </font>
+                  </Button>
+               </bottom>
+            </BorderPane>
+         </center>
+         <left>
+            <Pane prefHeight="341.0" prefWidth="5.0" style="-fx-background-color: #634921;" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </center>
+   <top>
+      <BorderPane prefHeight="37.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <top>
+            <Pane prefHeight="50.0" prefWidth="500.0" style="-fx-background-color: #634921;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="106.0" layoutY="11.0" text="Customer Information" textFill="WHITE">
+                     <font>
+                        <Font name="Monospaced Regular" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane prefHeight="5.0" prefWidth="500.0" style="-fx-background-color: #634921;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </top>
+</BorderPane>

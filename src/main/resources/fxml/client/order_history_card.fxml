@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="orderHistoryCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="365.0" style="-fx-background-color: #ffffff; -fx-border-color: #A38157;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.fxmlview.OrderHistoryCardView">
+   <children>
+      <Label fx:id="productNameLabel" alignment="TOP_LEFT" layoutX="93.0" layoutY="5.0" prefHeight="41.0" prefWidth="271.0" text="Product Name" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="productImage" fitHeight="80.0" fitWidth="71.0" layoutX="10.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../productimages/Pistachio Cupcake.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="starRating" layoutX="223.0" layoutY="72.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="141.0" spacing="5">
+         <children>
+            <ToggleButton fx:id="star1" styleClass="star-button" stylesheets="@../../values/styles.css" />
+            <ToggleButton fx:id="star2" styleClass="star-button" stylesheets="@../../values/styles.css" />
+            <ToggleButton fx:id="star3" styleClass="star-button" stylesheets="@../../values/styles.css" />
+            <ToggleButton fx:id="star4" styleClass="star-button" stylesheets="@../../values/styles.css" />
+            <ToggleButton fx:id="star5" styleClass="star-button" stylesheets="@../../values/styles.css" />
+         </children>
+      </HBox>
+      <Label fx:id="productDescriptionLabel" alignment="TOP_LEFT" layoutX="93.0" layoutY="27.0" prefHeight="47.0" prefWidth="254.0" text="Description" wrapText="true" />
+      <Label fx:id="typeLabel" layoutX="93.0" layoutY="75.0" prefHeight="17.0" prefWidth="132.0" text="Type: " wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+   </children>
+</Pane>

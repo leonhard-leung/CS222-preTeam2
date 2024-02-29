@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.6" prefWidth="1000.0" style="-fx-background-color: #ECE9E3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.view.analytics.AnalyticsPageView">
+   <left>
+      <VBox alignment="CENTER" prefHeight="648.0" prefWidth="250.0" spacing="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="150.0" prefWidth="200.0">
+               <center>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 0 0 10 10;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="salesLabel" text="₱1,500" textFill="#66382a">
+                           <font>
+                              <Font name="Impact" size="38.0" />
+                           </font>
+                        </Label>
+                     </children></VBox>
+               </center>
+               <top>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: #634921; -fx-background-radius: 10 10 0 0; -fx-border-radius: 10 10 0 0;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Sales" textFill="WHITE">
+                           <font>
+                              <Font name="Garamond Bold" size="25.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+               </top></BorderPane>
+            <BorderPane prefHeight="150.0" prefWidth="200.0">
+               <center>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 0 0 10 10;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="totalOrdersLabel" text="55" textFill="#66382a">
+                           <font>
+                              <Font name="Impact" size="60.0" />
+                           </font>
+                        </Label>
+                     </children></VBox>
+               </center>
+               <top>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="155.0" style="-fx-background-color: #634921; -fx-border-radius: 10 10 0 0; -fx-background-radius: 10 10 0 0;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Total Orders" textFill="WHITE">
+                           <font>
+                              <Font name="Garamond Bold" size="25.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+               </top></BorderPane>
+         </children>
+         <padding>
+            <Insets left="25.0" right="20.0" />
+         </padding></VBox>
+   </left>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="400.0" spacing="10.0">
+               <children>
+                  <Label text="FOOD" textFill="#66382a">
+                     <font>
+                        <Font name="Impact" size="29.0" />
+                     </font></Label>
+                  <TableView fx:id="foodAnalyticsTableView" focusTraversable="false" prefHeight="638.0" prefWidth="370.0" style="-fx-font-size: 13;" stylesheets="@../../../values/table_style.css">
+                    <columns>
+                      <TableColumn fx:id="foodProductsColumn" editable="false" minWidth="171.0" prefWidth="230.0" resizable="false" text="Product" />
+                      <TableColumn fx:id="foodProductsOrderCountColumn" editable="false" prefWidth="124.0" resizable="false" text="Order Count" />
+                    </columns>
+                  </TableView>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="5.0" right="25.0" top="5.0" />
+               </padding></VBox>
+            <VBox prefHeight="200.0" prefWidth="400.0" spacing="10.0">
+               <children>
+                  <Label text="BEVERAGE" textFill="#66382a">
+                     <font>
+                        <Font name="Impact" size="29.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="beverageAnalyticsTableView" focusTraversable="false" prefHeight="638.0" prefWidth="370.0" style="-fx-font-size: 13;" stylesheets="@../../../values/table_style.css">
+                    <columns>
+                      <TableColumn fx:id="beverageProductsColumn" editable="false" prefWidth="230.0" resizable="false" text="Product" />
+                      <TableColumn fx:id="beverageProductsOrderCountColumn" editable="false" prefWidth="124.0" resizable="false" text="Order Count" />
+                    </columns>
+                  </TableView>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="5.0" right="25.0" top="5.0" />
+               </padding></VBox>
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <VBox alignment="CENTER" prefHeight="70.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="81.0" prefWidth="942.0">
+               <children>
+                  <HBox prefHeight="75.0" prefWidth="1000.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="500.0" spacing="10.0">
+                           <padding>
+                              <Insets left="25.0" right="25.0" />
+                           </padding>
+                           <children>
+                              <Label text="ANALYTICS" textFill="#634921">
+                                 <font>
+                                    <Font name="Copperplate Gothic Light" size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="500.0" spacing="10.0">
+                           <children>
+                              <Label text="Current Date:" textFill="#634921">
+                                 <font>
+                                    <Font name="Rockwell" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="dateLabel" text="11/22/2024" textFill="#634921">
+                                 <font>
+                                    <Font name="Rockwell" size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="25.0" right="25.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <Line endX="950.0" stroke="#634921" strokeWidth="2.0" />
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

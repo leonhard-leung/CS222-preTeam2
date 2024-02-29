@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="400.0" style="-fx-background-color: #ECE9E3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.fxmlview.OrderHistoryPageView">
+   <children>
+      <Label alignment="CENTER" prefHeight="44.0" prefWidth="400.0" style="-fx-background-color: #695339;" text="ORDER HISTORY" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="22.0" />
+         </font>
+      </Label>
+      <Pane opacity="0.37" prefHeight="44.0" prefWidth="400.0" />
+      <ScrollPane fx:id="scrollPaneOrderHistory" hbarPolicy="NEVER" layoutX="9.0" layoutY="52.0" prefHeight="442.0" prefWidth="382.0" style="-fx-border-color: #695339;">
+         <content>
+            <GridPane fx:id="gridPaneOrderHistory" alignment="TOP_CENTER" prefHeight="0.0" prefWidth="0.0" vgap="7.0">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" />
+               </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="submitReviewButton" layoutX="328.0" layoutY="500.0" mnemonicParsing="false" onMouseEntered="#submitReviewButtonEntered" onMouseExited="#submitReviewButtonExited" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: #5dae65;" text="submit" textFill="WHITE">
+         <font>
+            <Font name="Copperplate Gothic Light" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="254.0" layoutY="500.0" mnemonicParsing="false" onMouseEntered="#cancelButtonEntered" onMouseExited="#cancelButtonExited" prefHeight="26.0" prefWidth="64.0" style="-fx-background-color: #FF5A65;" text="cancel" textFill="WHITE">
+         <font>
+            <Font name="Copperplate Gothic Light" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

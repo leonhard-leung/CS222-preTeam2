@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="275.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.fxmlview.CartItemCardView">
+   <children>
+      <Label fx:id="productNameLabel" alignment="TOP_LEFT" layoutX="17.0" layoutY="3.0" prefHeight="30.0" prefWidth="210.0" text="Product name" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="quantityLabel" layoutX="19.0" layoutY="25.0" prefHeight="19.0" prefWidth="64.0" text="qty: ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="sizeLabel" layoutX="94.0" layoutY="25.0" prefHeight="18.0" prefWidth="64.0" text="size:" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceLabel" layoutX="198.0" layoutY="24.0" prefHeight="18.0" prefWidth="76.0" text="P 0.00">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Line endX="185.0" layoutX="90.0" layoutY="49.0" startX="-100.0" strokeWidth="1.5" />
+   </children>
+</AnchorPane>

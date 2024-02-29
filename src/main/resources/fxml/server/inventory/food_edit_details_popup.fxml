@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="400.0" style="-fx-background-color: #ECE9E3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.view.inventory.FoodEditDetailsPopupView">
+   <top>
+      <Pane prefHeight="50.0" prefWidth="400.0" style="-fx-background-color: #634921;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="78.0" layoutY="11.0" text="Edit Food Details" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="24.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="51.0" prefWidth="400.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="acceptButton" mnemonicParsing="false" onMouseEntered="#setAcceptButtonMouseEntered" onMouseExited="#setAcceptButtonMouseExited" prefWidth="114.0" style="-fx-background-color: #5dae65;" text="Accept" textFill="WHITE">
+               <font>
+                  <Font name="Copperplate Gothic Light" size="15.0" />
+               </font></Button>
+         </children></HBox>
+   </bottom>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <VBox prefHeight="49.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="400.0" spacing="2.0">
+                     <children>
+                        <Button fx:id="chooseImageButton" mnemonicParsing="false" onMouseClicked="#chooseImage" prefHeight="28.0" text="Choose image file">
+                           <font>
+                              <Font name="Arial" size="13.0" />
+                           </font></Button>
+                        <TextField fx:id="imageTextField" prefHeight="25.0" prefWidth="255.0">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font></TextField>
+                     </children></HBox>
+                  <Label fx:id="imageLabel" text="..." textFill="RED">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="125.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </VBox>
+         </bottom>
+         <top>
+            <VBox prefHeight="178.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefWidth="390.0" text="INFORMATION" textFill="#66382a">
+                     <font>
+                        <Font name="Impact" size="19.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="100.0" prefWidth="300.0" spacing="5.0">
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                           <children>
+                              <Label text="PRODUCT NAME:" textFill="#634921">
+                                 <font>
+                                    <Font name="Garamond Bold" size="13.0" />
+                                 </font></Label>
+                              <TextField fx:id="productNameTextField" minHeight="28.0" prefHeight="28.0" promptText="Enter Product Name">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></TextField>
+                           </children></VBox>
+                        <VBox prefHeight="200.0" prefWidth="200.0" spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <children>
+                              <Label text="PRICE:" textFill="#634921">
+                                 <font>
+                                    <Font name="Garamond Bold" size="13.0" />
+                                 </font></Label>
+                              <TextField fx:id="priceTextField" minHeight="28.0" prefHeight="28.0" promptText="eg. 1500">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></TextField>
+                           </children></VBox>
+                     </children>
+                  </HBox>
+                  <Label text="PRODUCT DESCRIPTION:" textFill="#634921">
+                     <font>
+                        <Font name="Garamond Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                     </VBox.margin></Label>
+                  <TextArea fx:id="productDescriptionTextArea" prefHeight="200.0" prefWidth="200.0" promptText="Enter Short Description" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></TextArea>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+            </VBox>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>
