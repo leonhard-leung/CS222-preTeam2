@@ -14,6 +14,7 @@ import util.exception.AccountAlreadyLoggedIn;
 import util.exception.AccountExistsException;
 import util.exception.InvalidCredentialsException;
 
+import java.io.EOFException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -78,11 +79,16 @@ public class ServerController implements MainMenuAdminObserver {
     } // end of initializeAdminInterface
 
     private void listenToClient() throws IOException, ClassNotFoundException {
-        while (!clientSocket.isClosed()) {
-            Object[] data = (Object[]) streamReader.readObject();
-            if (data != null) {
-                handleClientRequest(data);
+        try {
+            while (!clientSocket.isClosed()) {
+                Object[] data = (Object[]) streamReader.readObject();
+                if (data != null) {
+                    handleClientRequest(data);
+                }
             }
+        } catch (EOFException eofException) {
+            System.out.println("Client disconnected: " + clientSocket.getInetAddress());
+            closeConnection();
         }
     } // end of listenToClient
 
@@ -177,4 +183,14 @@ public class ServerController implements MainMenuAdminObserver {
             throw new RuntimeException(e);
         }
     } // end of sendData
+
+    public void closeConnection() {
+        try {
+            streamReader.close();
+            streamWriter.close();
+            clientSocket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 } // end of ServerController
